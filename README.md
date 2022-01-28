@@ -82,7 +82,7 @@ heroku create
 - Para fazer deploy do seu app Heroku, basta você utilizar o comando git push de seu repositório local para a branch master do remote do Heroku:
 
 ```bash
-git push heroku-origin master
+git push heroku master
 ```
 
 - Pronto! Acesse a URL retornada pelo Heroku e você verá que sua aplicação está no ar!
