@@ -26,6 +26,14 @@ cd project-breaking-bad
 npm install
 ```
 
+- Crie um arquivo .env com as seguintes variaveis de ambiente:
+
+```json
+MYSQL_USER=
+MYSQL_PASSWORD=
+HOSTNAME=
+```
+
 ```bash
 npm start
 ```
