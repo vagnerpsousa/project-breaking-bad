@@ -53,6 +53,46 @@ npm test
 
 ### deploy
 
+- Utilizei os serviços do Heroku, que é necessário criar uma conta na plataforma. Se ainda não possui uma conta, acesse o [site oficial](https://id.heroku.com/login) e se cadastre.
+
+- Para sistemas Linux , instale o snap do Heroku CLI, executando o seguinte comando:
+
+```bash
+sudo snap install heroku --classic
+```
+
+- Para sistemas macOS , instale o Heroku CLI, executando o seguinte comando:
+
+```bash
+brew tap heroku/brew && brew install heroku
+```
+
+- Após a instalação ser concluída, você poderá acessar o Heroku por meio do seu terminal.
+
+```bash
+heroku login
+```
+
+- Para adicionar o remote do Heroku , basta usar o comando create do CLI dentro da pasta da aplicação, da seguinte maneira:
+
+```bash
+heroku create
+```
+
+- Para fazer deploy do seu app Heroku, basta você utilizar o comando git push de seu repositório local para a branch master do remote do Heroku:
+
+```bash
+git push heroku-origin master
+```
+
+- Pronto! Acesse a URL retornada pelo Heroku e você verá que sua aplicação está no ar!
+
+
+
+
+
+
+
 
 
 
