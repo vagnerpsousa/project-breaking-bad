@@ -28,10 +28,9 @@ npm install
 
 - Crie um arquivo .env com as seguintes variaveis de ambiente:
 
-
-MYSQL_USER=
-MYSQL_PASSWORD=
-HOSTNAME=
+`MYSQL_USER`
+`MYSQL_PASSWORD`
+`HOSTNAME`
 
 
 ```bash
