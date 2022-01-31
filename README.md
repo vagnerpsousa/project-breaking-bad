@@ -9,6 +9,7 @@ Nesse projeto, foi desenvolvido um back-end usando ORM com o pacote sequelize do
 - Fazer requisições de API utilizando o Axios
 - Interação com o banco de dados MySQL
 - Testes de integração com Jest
+- Deploy com Heroku
 
 
 
@@ -119,15 +120,22 @@ heroku_7643ec736354xxx // base de dados
 heroku config:set USER='b7e2437887xxxa' PASSWORD='0200xxx6' HOSTNAME='us-cdbr-iron-east-02.cleardb.net' DATABASE='heroku_7643ec736354xxx'
 ```
 
-
-
 - Para fazer deploy do seu app Heroku, basta você utilizar o comando git push de seu repositório local para a branch master do remote do Heroku:
 
 ```bash
 git push heroku master
 ```
 
+- Execute suas migrações: 
+
+```bash
+heroku run sequelize db:migrate
+```
+
 - Pronto! Acesse a URL retornada pelo Heroku e você verá que sua aplicação está no ar!
+
+
+- Deploy do projeto: https://breaking-bad-12345.herokuapp.com/
 
 
 
