@@ -28,9 +28,10 @@ npm install
 
 - Crie um arquivo .env com as seguintes variaveis de ambiente:
 
-`MYSQL_USER`
-`MYSQL_PASSWORD`
+`USER`
+`PASSWORD`
 `HOSTNAME`
+`DATABASE`
 
 
 ```bash
@@ -78,6 +79,47 @@ heroku login
 ```bash
 heroku create
 ```
+
+- Para configurar o banco de dados MySQL para Node.js no aplicativo Heroku, o primeiro passo é instalar o complemento ClearDB em nosso aplicativo com o comando:
+
+```bash
+heroku addons:create cleardb:ignite
+```
+
+- Depois de instalar os Add-ons, podemos obter a URL do nosso banco de dados executando o comando:
+
+```bash
+heroku config | grep CLEARDB_DATABASE_URL
+```
+
+- o retorno será algo parecido com:
+
+```bash
+DATABASE_URL: 'mysql://b7e2437887xxxa:0200xxx6@us-cdbr-iron-east-02.cleardb.net/heroku_7643ec736354xxx?reconnect=true'
+```
+
+- onde:
+
+```bash
+b7e2437887xxxa // nome do usuário
+```
+```bash
+0200xxx6 // senha
+```
+```bash
+us-cdbr-iron-east-02.cleardb.net // hospedeiro
+```
+```bash
+heroku_7643ec736354xxx // base de dados
+```
+
+- Sete as variaveis de ambiente com seus respectivos valores:
+
+```bash
+heroku config:set USER='b7e2437887xxxa' PASSWORD='0200xxx6' HOSTNAME='us-cdbr-iron-east-02.cleardb.net' DATABASE='heroku_7643ec736354xxx'
+```
+
+
 
 - Para fazer deploy do seu app Heroku, basta você utilizar o comando git push de seu repositório local para a branch master do remote do Heroku:
 
