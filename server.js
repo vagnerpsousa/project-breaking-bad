@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const rescue = require('express-rescue');
-const characterController = require('./controllers/characterController');
-const { error } = require('./middlewares');
+const characterController = require('./src/api/controllers/characterController');
+const { error } = require('./src/api/middlewares');
 
 const app = express();
 

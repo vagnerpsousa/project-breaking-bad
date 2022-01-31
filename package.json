@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate",
-    "start": "nodemon src/api/server.js",
+    "start": "nodemon server.js",
     "drop": "npx sequelize-cli db:drop",
     "seed": "npx sequelize-cli db:seed:all",
     "test": "jest --runInBand",
