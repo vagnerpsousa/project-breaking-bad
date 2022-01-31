@@ -135,7 +135,7 @@ heroku run sequelize db:migrate
 - Pronto! Acesse a URL retornada pelo Heroku e você verá que sua aplicação está no ar!
 
 
-- Deploy do projeto: https://breaking-bad-12345.herokuapp.com/
+- Deploy do projeto: https://breaking-bad-12345.herokuapp.com/character
 
 
 
